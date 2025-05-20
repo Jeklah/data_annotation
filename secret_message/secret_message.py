@@ -26,7 +26,7 @@ def fetch_and_parse_doc(url: str) -> str:
 def parse_table_characters(table_str: str) -> list:
     """
     Parses the table from the document and extracts characters.
-    :param table: The HTML content of the table.
+    :param table_str: The HTML content of the table.
     :return characters: A list of tuples containing (x, y, character).
     """
     soup = bs(table_str, 'html.parser')
